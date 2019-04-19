@@ -1,0 +1,29 @@
+.bannerContent {
+  &:nth-child(1) {
+    transform: translateY(-250px);
+    animation: folDawn 2s linear forwards;
+  }
+  &:nth-child(2) {
+    transform: translateY(-250px);
+    animation: folDawn 2s 2s linear forwards;
+  }
+  &:nth-child(3) {
+    transform: translateY(-250px);
+    animation: folDawn 2s 4s linear forwards;
+  }
+  &:nth-child(4) {
+    transform: translateY(-250px);
+    animation: folDawn 2s 6s linear forwards;
+  }
+}
+
+@keyframes folDawn {
+
+  100% {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+  }
+}

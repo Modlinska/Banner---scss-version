@@ -1,0 +1,110 @@
+.bannerContent {
+  &:nth-child(1) h2 {
+    animation: toLeft 2s 8s forwards, runLeft 5s 16s forwards;
+  }
+  &:nth-child(2) h2 {
+    animation: toLeft 2s 9s forwards, runRight 5s 16s forwards;
+  }
+  &:nth-child(3) h2 {
+    animation: toLeft 2s 10s forwards, runLeft 5s 16s forwards;
+  }
+  &:nth-child(4) h2 {
+    animation: toLeft 2s 11s forwards, runRight 5s 16s forwards;
+  }
+  &:nth-child(1) .img {
+    animation: toRight 2s 8s forwards, colors1 0s 12s forwards, rotaLeft 3s 16s  linear forwards;
+  }
+  &:nth-child(2) .img {
+    animation: toRight 2s 9s forwards, colors2 0s 13s forwards, rotaRight 1.5s 16s  linear forwards;
+  }
+  &:nth-child(3) .img {
+    animation: toRight 2s 10s forwards, colors3 0s 14s forwards, rotaLeft 3s 16s linear forwards;
+  }
+  &:nth-child(4) .img {
+    animation: toRight 2s 11s forwards, colors4 0s 15s forwards, rotaRight 1.5s 16s linear forwards;
+  }
+}
+@keyframes toLeft {
+  100% {
+    transform: translateX(-100px);
+  }
+}
+
+@keyframes toRight {
+  100% {
+    transform: translateX(100px);
+  }
+}
+@keyframes colors1 {
+
+  100% {
+    background: url("../images/tło.png") 0 0;
+    background-repeat: no-repeat;
+    background-position: 0 -5px;
+  }
+}
+
+@keyframes colors2 {
+  100% {
+    background: url("../images/tło.png") 0 0;
+    background-repeat: no-repeat;
+    background-position: 0 -80px;
+  }
+}
+
+@keyframes colors3 {
+  100% {
+    background: url("../images/tło.png") 0 0;
+    background-repeat: no-repeat;
+    background-position: 0 -130px;
+  }
+}
+
+@keyframes colors4 {
+  100% {
+    background: url("../images/tło.png") 0 0;
+    background-repeat: no-repeat;
+    background-position: 0 -190px;
+  }
+
+}
+@keyframes runLeft {
+  100% {
+    transform: translateX(-600px);
+
+  }
+
+}
+
+@keyframes runRight {
+  100% {
+    transform: translateX(600px);
+
+  }
+}
+
+
+@keyframes rotaRight {
+  0% {
+    transform: translateX(0) rotate(0deg);
+
+  }
+
+  100% {
+    transform: translateX(300px) rotate(360deg);
+
+  }
+
+}
+
+@keyframes rotaLeft {
+  0% {
+    transform: translateX(0) rotate(360deg);
+
+  }
+
+  100% {
+    transform: translateX(-600px) rotate(0deg);
+
+  }
+}
